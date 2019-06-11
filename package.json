@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nf start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Tomomi Imura",
   "license": "MIT",
@@ -14,6 +16,8 @@
     "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "socketio": "^1.0.0"
-  }
+    "socketio": "^1.0.0",
+    "snyk": "^1.174.2"
+  },
+  "snyk": true
 }
